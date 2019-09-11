@@ -11,7 +11,7 @@ $dbname = 'youtube';
   
 // Create connection
 $conn = new mysqli ();
-mysqli_real_connect(Sconn, $host, $dbusername, $dbpassword, $dbname, 3306);
+mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306);
 
 
 if (mysqli_connect_error()){
