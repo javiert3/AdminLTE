@@ -3,9 +3,9 @@ $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 if (!empty($username)){
 if (!empty($password)){
-$host = "localhost";
-$dbusername = "root";
-$dbpassword = "";
+$host = "medictest2.mysql.database.azure.com";
+$dbusername = "javiert3@medictest2";
+$dbpassword = "$Tanley1986";
 $dbname = "youtube";
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
