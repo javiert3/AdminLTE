@@ -3,15 +3,15 @@ $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 if (!empty($username)){
 if (!empty($password)){
-//$host = "medictest2.mysql.database.azure.com";
-//$dbusername = "javiert3@medictest2";
-//$dbpassword = "$Tanley1986";
-//$dbname = "youtube";
+$host = 'medictest2.mysql.database.azure.com';
+$dbusername = 'javiert3@medictest2';
+$dbpassword = '$Tanley1986';
+$dbname = 'youtube';
   
   
-$con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, "medictest2.mysql.database.azure.com", "javiert3@medictest2", {$Tanley1986}, {account}, 3306);  
 // Create connection
-//$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+$conn = new mysqli ();
+mysqli_real_connect(Sconn, $host, $dbusername, $dbpassword, $dbname, 3306);
 
 
 if (mysqli_connect_error()){
