@@ -12,7 +12,7 @@ $dbname = 'youtube';
 // Create connection
 //$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);//tutorial
 $conn = mysqli_init();
-mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $db_name, 3306);
+mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306);
 
 if (mysqli_connect_error()){
 die('Connect Error ('. mysqli_connect_errno() .') '
