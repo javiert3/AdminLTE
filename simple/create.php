@@ -1,3 +1,5 @@
+<?php
+
 if (mysqli_query($conn, '
 CREATE TABLE Products (
 `Id` INT NOT NULL AUTO_INCREMENT ,
@@ -9,3 +11,4 @@ PRIMARY KEY (`Id`)
 ')) {
 printf("Table created\n");
 }
+?>
