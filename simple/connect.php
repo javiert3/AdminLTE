@@ -5,14 +5,17 @@ if (!empty($username)){
 if (!empty($password)){
 $host = 'medictest2.mysql.database.azure.com';
 $dbusername = 'javiert3@medictest2';
+$dbuserhost = 'javiert3@medictest2.mysql.database.azure.com';
 $dbpassword = '$Tanley1986';
 $dbname = 'youtube';
   
   
 // Create connection
 //$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);//tutorial
+  
+  
 $conn = mysqli_init();
-mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306);
+mysqli_real_connect($conn, $dbuserhost, $dbpassword, $dbname, 3306);
 
 if (mysqli_connect_error()){
 die('Connect Error ('. mysqli_connect_errno() .') '
