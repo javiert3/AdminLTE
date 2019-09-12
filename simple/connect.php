@@ -30,7 +30,7 @@ $sql = "INSERT INTO account (username, password)
 values ('$username','$password')";
 if ($conn->query($sql)){
   
-echo "New record is inserted sucessfully";
+//echo "New record is inserted sucessfully";
 include 'postpic.php';  
 }
 else{
