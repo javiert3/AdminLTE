@@ -19,6 +19,12 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
+  include 'create.php';
+  
+  mysqli_close($conn);
+}
+  
+/*  
   $username = 'BrandNewProduct';
 $password = 'Blue';
 //$product_price = 15.5;
@@ -33,10 +39,10 @@ mysqli_stmt_close($stmt);
   
   
   
-/*$sql = "INSERT INTO account (username, password) values ('$username','$password')";
+$sql = "INSERT INTO account (username, password) values ('$username','$password')";
 //if ($conn->query($sql)){
 if ($stmt = mysqli_prepare($conn, "INSERT INTO Account (username, password) values ('$username','$password')")){
-echo "New record is inserted sucessfully";*/
+echo "New record is inserted sucessfully";
 }
 else{
 echo "Error: ". $sql ."
@@ -51,7 +57,7 @@ die();
 }
 }
 else{
-echo "Username should not be empty";
-die();
+//echo "Username should not be empty";
+//die();
 }
-?>
+?>*/
