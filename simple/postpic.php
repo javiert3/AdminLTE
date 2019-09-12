@@ -4,7 +4,7 @@
 $statusMsg = '';
 
 // File upload path
-$targetDir = "uploads/";
+$targetDir = "upload1/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
