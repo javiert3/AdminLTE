@@ -1,6 +1,7 @@
 <?php
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
+$Id = '3';
 if (!empty($username)){
 if (!empty($password)){
 $host = 'medictest2.mysql.database.azure.com';
@@ -25,8 +26,8 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-$sql = "INSERT INTO account (username, password)
-values ('$username','$password')";
+$sql = "INSERT INTO account (id, username, password)
+values ('Id', '$username','$password')";
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
 }
