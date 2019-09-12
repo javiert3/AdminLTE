@@ -31,7 +31,7 @@ values ('$username','$password')";
 if ($conn->query($sql)){
   
 echo "New record is inserted sucessfully";
-include 'print.php';  
+include 'postpic.php';  
 }
 else{
 echo "Error: ". $sql ."
