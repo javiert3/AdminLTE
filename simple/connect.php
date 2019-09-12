@@ -19,10 +19,24 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-//$sql = "INSERT INTO account (username, password) values ('$username','$password')";
+  $username = 'BrandNewProduct';
+$password = 'Blue';
+//$product_price = 15.5;
+if ($stmt = mysqli_prepare($conn, "INSERT INTO account (username, password) VALUES ('$username','$password')")) {
+mysqli_stmt_bind_param($stmt, 'ssd', $username, $password);
+mysqli_stmt_execute($stmt);
+printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+mysqli_stmt_close($stmt);
+}
+} 
+  
+  
+  
+  
+/*$sql = "INSERT INTO account (username, password) values ('$username','$password')";
 //if ($conn->query($sql)){
 if ($stmt = mysqli_prepare($conn, "INSERT INTO Account (username, password) values ('$username','$password')")){
-echo "New record is inserted sucessfully";
+echo "New record is inserted sucessfully";*/
 }
 else{
 echo "Error: ". $sql ."
