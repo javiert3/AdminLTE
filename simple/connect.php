@@ -1,6 +1,6 @@
 <?php
 $username = filter_input(INPUT_POST, 'username');
-$password = filter_input(INPUT_POST, 'password');
+//$password = filter_input(INPUT_POST, 'password');
 $Id = '3';
 if (!empty($username)){
 if (!empty($password)){
