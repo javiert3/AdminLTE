@@ -19,18 +19,14 @@ mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306);
 if (mysqli_connect_errno($conn)) {
 die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-
-/*if (mysqli_connect_error()){
-die('Connect Error ('. mysqli_connect_errno() .') '
-. mysqli_connect_error());
-}*/
-else{
+include 'postpic.php';  
+/*else{
 $sql = "INSERT INTO account (username, password)
 values ('$username','$password')";
 if ($conn->query($sql)){
   
 echo "New record is inserted sucessfully";
-//include 'postpic.php';  
+
 }
 else{
 echo "Error: ". $sql ."
@@ -47,5 +43,5 @@ die();
 else{
 echo "Username should not be empty";
 die();
-}
+}*/
 ?>
