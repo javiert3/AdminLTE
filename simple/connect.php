@@ -1,8 +1,8 @@
 <?php
-/*$username = filter_input(INPUT_POST, 'username');
+$username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 if (!empty($username)){
-if (!empty($password)){*/
+if (!empty($password)){
 $host = 'medictest2.mysql.database.azure.com';
 $dbusername = 'javiert3@medictest2';
 $dbuserhost = 'javiert3@medictest2.mysql.database.azure.com';
@@ -21,7 +21,7 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 echo "you're logged in";
 include 'postpic2.php';  
-/*else{
+else{
 $sql = "INSERT INTO account (username, password)
 values ('$username','$password')";
 if ($conn->query($sql)){
@@ -44,5 +44,5 @@ die();
 else{
 echo "Username should not be empty";
 die();
-}*/
+}
 ?>
