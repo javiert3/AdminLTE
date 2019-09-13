@@ -19,6 +19,7 @@ mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306);
 if (mysqli_connect_errno($conn)) {
 die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
+echo "you're logged in";
 include 'postpic2.php';  
 /*else{
 $sql = "INSERT INTO account (username, password)
