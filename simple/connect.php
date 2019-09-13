@@ -1,8 +1,7 @@
 <?php
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
-$Id = '3';
-//if (!empty($username)){
+if (!empty($username)){
 if (!empty($password)){
 $host = 'medictest2.mysql.database.azure.com';
 $dbusername = 'javiert3@medictest2';
