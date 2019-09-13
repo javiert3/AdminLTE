@@ -20,7 +20,7 @@ if (mysqli_connect_errno($conn)) {
 die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 echo "you're logged in";
-include 'postpic2.php';  
+//include 'postpic2.php';  
 else{
 $sql = "INSERT INTO account (username, password)
 values ('$username','$password')";
