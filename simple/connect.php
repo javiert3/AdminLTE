@@ -7,7 +7,7 @@ if (!empty($password)){
 $host = 'medictest2.mysql.database.azure.com';
 $dbusername = 'javiert3@medictest2';
 $dbuserhost = 'javiert3@medictest2.mysql.database.azure.com';
-$dbpassword = '$Tanley1986';
+$dbpassword = '$Tanley1987';
 $dbname = 'youtube';
   
   
